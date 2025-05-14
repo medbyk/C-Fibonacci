@@ -9,7 +9,6 @@ class Minimizer
         _function = function;
     }
 
-    // ❌ Ошибка 1: Некорректная реализация метода деления пополам
     public double Bisection(double a, double b, double epsilon = 1e-5)
     {
         while ((b - a) > epsilon)
@@ -86,7 +85,6 @@ class Minimizer
         return x;
     }
 
-    // ❌ Ошибка 2: Нет проверки на минимальный размер массива, возможное деление на 0
     public double Fibonacci(double a, double b, int n = 30)
     {
         int[] F = new int[n + 2];
